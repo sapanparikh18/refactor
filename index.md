@@ -56,13 +56,13 @@ When a literary class does not provide methods that you frequently need you may 
 ### Replace data value with object
 In a simple world we start with start representing programming concepts with simple data types like Strings and integers.  But in some cases you will realize a simple string does not suffice all the logic we may want, for example, a string that represents full name may need it’s own method to render names. Ex: “firstName LastName”, or “Last, fullName” or names with title etc. 
 
-### Replace array with object 
-### replace magic number with constant 
+### REPLACE ARRAY WITH OBJECT 
+### REPLACE MAGIC NUMBER WITH CONSTANT 
 
-### Replace type code with subclasses
+### REPLACE TYPE CODE WITH SUBCLASSES
 If you have a class where final type codes exists, for example, in a class named “Appointment” if you have a “private int appointmentType;” which can have values associated with “face to face”, “conf call” etc then you may want to create a super class called appointment and create subclasses of it like ConferenceCall, and FaceToFaceAppointment which extends Appointment class. 
 
-### Decompose conditional
+### DECOMPOSE CONDITIONAL
 Method length and nesting are not the only things that contribute to higher cognitive complexity. Conditionals too can make your programs harder to read/debug. For example 
 ```java
 if(date != null && (date.after(today) || !date.after(oneMonthFromToday))){
