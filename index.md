@@ -36,21 +36,21 @@ When literary class does not have the method you need
 ### INTRODUCE LOCAL EXTENSION
 When literary class does not have methods you need and you create a new class with delegation
 
-### Encapsulate FIELDS
+### ENCAPSULATE FIELDS
 When data classes have public fields
-### Encapsulate Collections
+### ENCAPSULATE COLLECTIONS
 When data classes return collections they should be changed to return 
-### Replace inheritance with delegation
-### Replace type code with state/strategy (pattern)
-### Form Template Method (pattern)
-### Inline to temp
-### Split temp variable
-### Remove assignments to parameters
-### Extract class
-### HIDE A Delegate 
-Instead of employee.getDepartment().getManager() it should be employee.getManager()
+### REPLACE INHERITANCE WITH DELEGATION
+### REPLACE TYPE CODE WITH STATE/STRATEGY (PATTERN)
+### FORM TEMPLATE METHOD (PATTERN)
+### INLINE TO TEMP
+### SPLIT TEMP VARIABLE
+### REMOVE ASSIGNMENTS TO PARAMETERS
+### EXTRACT CLASS
+### HIDE A DELEGATE 
+Instead of `employee.getDepartment().getManager()` it should be `employee.getManager()`
 
-### Introduce a foreign method
+### INTRODUCE A FOREIGN METHOD
 What we call helper methods. Used to work with library classes to which we do not have access to edit code.
 ### Introduce local extension
 When a literary class does not provide methods that you frequently need you may want to create a new class that solely extends functionalities of literary class. A good example would be a class that adds functionalities to Date in Java.
@@ -65,18 +65,21 @@ If you have a class where final type codes exists, for example, in a class named
 
 ### Decompose conditional
 Method length and nesting are not the only things that contribute to higher cognitive complexity. Conditionals too can make your programs harder to read/debug. For example 
+```
 if(date != null && (date.after(today) || !date.after(oneMonthFromToday))){
 	//…
 }else{
 	//…
 }
+```
 The above statement alone has cognitive complexity of 3, which means that it’s 3 times harder to read than the following line.
+```
 if(isValidDate(date)){
 //	extract method
 }else{
 // extract method
 }
-
+```
 Consolidate 
 
 
