@@ -1,10 +1,9 @@
 
 
 # Refactoring
-###### Sapan Parikh
-###### July 9, 2018
 
 While refactoring is synonymous to “code clean up” before you start cleaning a legacy system a good set of test cases is a prerequisite. Having a suit of test cases will keep two things in check.
+
 1. While you refactor code you are not introducing errors 
 2. As a result of refactoring you are not making your system slower
 
@@ -65,7 +64,7 @@ If you have a class where final type codes exists, for example, in a class named
 
 ### Decompose conditional
 Method length and nesting are not the only things that contribute to higher cognitive complexity. Conditionals too can make your programs harder to read/debug. For example 
-```
+```java
 if(date != null && (date.after(today) || !date.after(oneMonthFromToday))){
 	//…
 }else{
@@ -73,7 +72,7 @@ if(date != null && (date.after(today) || !date.after(oneMonthFromToday))){
 }
 ```
 The above statement alone has cognitive complexity of 3, which means that it’s 3 times harder to read than the following line.
-```
+```java
 if(isValidDate(date)){
 //	extract method
 }else{
