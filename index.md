@@ -5,8 +5,10 @@
 # July 9, 2018
 
 While refactoring is synonymous to “code clean up” before you start cleaning a legacy system a good set of test cases is a prerequisite. Having a suit of test cases will keep two things in check.
+	
 	1. While you refactor code you are not introducing errors
 	2. As a result of refactoring you are not making your system slower
+
 While you start refactoring the system a slight performance loss is expected but the assumption is that only 10% of the code is the root cause behind the slowness of any system and refactoring will help you identify that 10% as opposed to speculating what’s slow and what’s not.
 
 ## Code identification
