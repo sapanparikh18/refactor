@@ -2,6 +2,7 @@
 
 # Refactoring
 
+The are some of my notes I took while reading Martin Fowler's _Refactoring. Improving THE Design of Existing Code_
 While refactoring is synonymous to “code clean up”, before you start cleaning a legacy system a good set of test cases is a prerequisite. Having a suit of test cases will keep two things in check.
 
 1. While you refactor code you are not introducing new bugs 
