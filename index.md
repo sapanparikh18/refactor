@@ -36,7 +36,7 @@ Developers do find themselves writing date formatting or date arithmetic related
 
 
 ### INTRODUCE LOCAL EXTENSION
-There may be a scenario where a library class does not have a several methods you need. In such a case a new class should be created by either extension or delegation which includes the methods you need. 
+There may be a scenario where a library class does not have several methods you need. In such a case a new class should be created by either extension or delegation which includes the methods you need. 
 
 
 ### ENCAPSULATE COLLECTIONS
@@ -141,4 +141,7 @@ public class EmployerDAO {
 ``` 
 
   
+
+
+
 
