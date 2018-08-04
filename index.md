@@ -12,10 +12,10 @@ While refactoring is synonymous to “code clean up” before you start cleaning
 While you start refactoring the system a slight performance loss is expected but the assumption is that only 10% of the code is the root cause behind the slowness of any system and refactoring will help you identify that 10% as opposed to speculating what’s slow and what’s not.
 
 ## CODE IDENTIFICATION
-Usually would want to start with a method or class which is irrationally long and complex. In today’s tools, the most suitable code fragments will show up with high cyclomatic or cognitive complexity. Or other simpler yardstick to identify code that needs refactoring is simply find all methods which are too long, maybe more than 50 to 100 lines.  I have seen a system containing single method bodies spanning more than 10000 lines. That being said there is no easy way to define “long methods”. Maybe you can start with the top 10% of your longest methods!
+Usually you would want to start with a method or class which is irrationally long and complex. In today’s tools, the most suitable code fragments will show up with high cyclomatic or cognitive complexity. Or other simpler yardstick to identify code that needs refactoring is simply find all methods which are too long, maybe more than 50 to 100 lines.  I have seen a system containing single method bodies spanning more than 10000 lines. That being said there is no easy way to define “long methods”. Maybe you can start with the top 10% of your longest methods!
 
 ## REFACTORING TECHNIQUES 
-There are a few refactoring methodologies which you can use if you are faced with scary long methods
+Following are a few refactoring methodologies you can use while working on a large legacy system.
 
 
 
