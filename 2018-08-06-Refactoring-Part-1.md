@@ -2,7 +2,7 @@
 layout: post
 title:  "Identifying and Refactoring Code"
 date:   2018-08-06 11:41:00 +0500
-categories: jekyll update
+categories: Refactoring
 ---
 
 # Refactoring
